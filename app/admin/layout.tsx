@@ -1,17 +1,7 @@
 import type { Metadata } from "next";
-import {
-  Bitter,
-  Inter,
-  Playfair,
-  Playfair_Display,
-  Playfair_Display_SC,
-} from "next/font/google";
-import "./globals.css";
+import { Inter } from "next/font/google";
 
-const inter = Bitter({
-  subsets: ["cyrillic"],
-  weight: ["400", "500", "600", "700"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,7 +15,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <h1 className="text-center w-full font-bold texr-[58px]">
+          I am admin layout
+        </h1>
+        {children}
+      </body>
     </html>
   );
 }
