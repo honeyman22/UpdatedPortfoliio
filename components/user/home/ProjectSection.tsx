@@ -4,6 +4,7 @@ import ProjectCard   from "./ProjectCard";
 
 
 const ProjectSection = () => {
+  const ={eded}
   return (
     <section className="project-section bg-secondary py-10 sm:py-20 px-4 sm:px-10  w-full">
     <TopDownAnimation>
