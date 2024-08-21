@@ -19,26 +19,27 @@ export interface IMenus {
 export const menu: IMenus[] = [
   {
     id: 1,
-    name: "Expertise",
-    url: "/resident",
+    name: "Skills",
+    url: "#skills",
   },
   {
     id: 2,
-    name: "Skills",
-    url: "/security",
+    name: "Expertise",
+    url: "#expertise",
   },
   {
     id: 3,
-    name: "Contact",
-    url: "/management",
+    name: "Experience",
+    url: "#experience",
   },
   {
     id: 4,
     name: "Education",
-    url: "/aboutus",
+    url: "#Education",
   },
 
-  { id: 7, name: "Blogs", url: "/blog" },
+  { id: 5, name: "Blogs", url: "#blog" },
+  { id: 5, name: "Contact", url: "#contact" },
 ];
 const Header = () => {
   const { scrollY } = useScroll();
