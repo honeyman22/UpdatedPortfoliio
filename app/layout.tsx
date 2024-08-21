@@ -1,12 +1,7 @@
 import type { Metadata } from "next";
-import {
-  Bitter,
-  Inter,
-  Playfair,
-  Playfair_Display,
-  Playfair_Display_SC,
-} from "next/font/google";
+import { Bitter } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/layout/Header";
 
 const inter = Bitter({
   subsets: ["cyrillic"],
@@ -25,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
