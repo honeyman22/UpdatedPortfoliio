@@ -1,6 +1,6 @@
 import { projectCategory } from "@/utils/deleteable/project-section";
 import ProjectCard from "./ProjectCard";
-import { projectCategoryType } from "@/utils/types/dto";
+import { ProjectCategoryType } from "@/utils/types/dto";
 import ReusableHeader from "@/components/common/ReusableHeader";
 
 const ProjectSection = () => {
@@ -12,7 +12,7 @@ const ProjectSection = () => {
             achieve your business goals."
       />{" "}
       <div className="project-card-wrapper grid gap-6 grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
-        {projectCategory.map((category: projectCategoryType) => (
+        {projectCategory.map((category: ProjectCategoryType) => (
           <ProjectCard key={category.id} category={category} />
         ))}
       </div>

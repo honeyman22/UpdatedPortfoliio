@@ -19,7 +19,7 @@ export const TopDownAnimation = ({
       ref={ref}
       initial={{ opacity: 0, y: 40 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.3, delay: delay ? delay : 0.3, ease: easeIn }}
+      transition={{ duration: 0.3, delay: delay ?? 0.3, ease: easeIn }}
       className={`common-animation ${className}`}
     >
       {children}

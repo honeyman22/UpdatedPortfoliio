@@ -69,7 +69,10 @@ const ContactSection = () => {
           </p>
           <div className="mt-10 flex w-full  flex-wrap  gap-8 lg:flex-col">
             {contactdetails.map((item: IContactDetails, index) => (
-              <div key={index} className="flex w-[260px]   items-start gap-2">
+              <div
+                key={item?.name}
+                className="flex w-[260px]   items-start gap-2"
+              >
                 <div className=" flex size-10 min-w-10 items-center justify-center rounded-full bg-primaryblue">
                   {item.icon}
                 </div>
