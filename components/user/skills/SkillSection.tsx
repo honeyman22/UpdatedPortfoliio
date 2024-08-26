@@ -1,6 +1,8 @@
 import ReusableHeader from "@/components/common/ReusableHeader";
 import React from "react";
-import SkillCard from "./SkillCard";
+
+import { HorizontalMarquee } from "@/components/common/HorizontalMarqe";
+import { skills } from "@/utils/deleteable/skills";
 
 const SkillSection = () => {
   return (
@@ -12,15 +14,19 @@ const SkillSection = () => {
         title="My Skills"
         message="Elevate your projects with my comprehensive skill set, blending technical expertise and creative insight to achieve outstanding, impactful solutions."
       />
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        <SkillCard />
-        <SkillCard />
-        <SkillCard />
-        <SkillCard />
-        <SkillCard />
-        <SkillCard />
-        <SkillCard />
-        <SkillCard />
+      <div className="flex flex-col gap-6">
+        {" "}
+        <HorizontalMarquee
+          items={skills.slice(0, 8)}
+          speed="slow"
+          direction="left"
+        />
+        <HorizontalMarquee
+          items={skills.slice(8, 16)}
+          speed="slow"
+          direction="right"
+          pauseOnHover
+        />
       </div>
     </section>
   );

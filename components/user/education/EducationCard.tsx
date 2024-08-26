@@ -6,18 +6,20 @@ const EducationCard = ({
   subtitle,
   rank,
   address,
+  image,
 }: {
   name: string;
   subtitle: string;
   rank: string;
   address: string;
+  image: string;
 }) => {
   return (
     <div className="experience-card w-full  rounded-lg bg-white flex flex-col sm:flex-row sm:gap-10  p-4 shadow-custom ">
       <div>
         <Image
-          src={"/exprience/ultimodeal.png"}
-          alt="ultimodeal-logo"
+          src={image}
+          alt={name}
           width={80}
           height={80}
           objectFit="contain"

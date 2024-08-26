@@ -21,6 +21,7 @@ const EducationSection = () => {
             name={item?.name}
             rank={item?.rank}
             subtitle={item?.subtitle}
+            image={item?.image}
           />
         ))}
       </div>

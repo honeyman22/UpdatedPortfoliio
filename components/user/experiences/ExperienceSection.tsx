@@ -1,6 +1,7 @@
 import React from "react";
 import ExperienceCard from "./ExperienceCard";
 import ReusableHeader from "@/components/common/ReusableHeader";
+import { experiences } from "@/utils/deleteable/education";
 
 const ExperienceSection = () => {
   return (
@@ -10,8 +11,9 @@ const ExperienceSection = () => {
         message="Leverage my extensive background in frontend development to bring your projects to life with precision, creativity, and innovation."
       />
       <div className="grid lg:grid-cols-2 gap-6">
-        <ExperienceCard />
-        <ExperienceCard />
+        {experiences.map((item) => (
+          <ExperienceCard key={item.id} item={item} />
+        ))}
       </div>
     </section>
   );
