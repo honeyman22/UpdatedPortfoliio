@@ -15,7 +15,7 @@ const SkillCard = ({
       <div className="h-[40px] w-[40px] relative">
         <Image src={item.icon} alt={item?.name} fill layout="contain" />
       </div>
-      <h1 className="font-semibold text-lg">{item.name}</h1>
+      <h3 className="font-semibold text-lg">{item.name}</h3>
       <p className="text-sm line-clamp-3 ">{item.description}</p>
     </div>
   );

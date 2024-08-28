@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.nishan-bhattarai.com.np
+
+# Sitemaps
+Sitemap: https://www.nishan-bhattarai.com.np/sitemap.xml
