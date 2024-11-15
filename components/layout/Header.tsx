@@ -39,7 +39,7 @@ export const menu: IMenus[] = [
   },
 
   { id: 5, name: "Blogs", url: "#blog" },
-  { id: 5, name: "Contact", url: "#contact" },
+  { id: 6, name: "Contact", url: "#contact" },
 ];
 const Header = () => {
   const { scrollY } = useScroll();
@@ -66,11 +66,11 @@ const Header = () => {
         transition={{ duration: 0.5, ease: "easeInOut" }}
         animate={hidden ? "hidden" : "visible"}
         className="header fixed inset-x-0 top-0 z-[5000]  flex items-center justify-between
-         bg-white  px-4 py-6 shadow-sm md:px-10  2xl:px-40"
+         bg-white   py-6 shadow-sm px-4 sm:px-10"
       >
         <nav className="flex flex-row items-center justify-between w-full gap-10">
           <Link href="/">
-            <Image src="/svg/logo.svg" alt="vms logo" width={40} height={40} />
+            <Image src="/logo.png" alt="vms logo" width={120} height={40} />
           </Link>
           <ul className=" hidden md:flex  flex-row gap-10 text-gray10 ">
             {menu.map((item) => (
