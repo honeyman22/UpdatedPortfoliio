@@ -6,10 +6,10 @@ const Header = () => {
     <nav className="npl-header px-6  sm:px-10 my-5 w-full">
       <ul className="flex ">
         <li className="px-5 py-2">
-          <Link href="/teams">Home</Link>
+          <Link href="/npl">Home</Link>
         </li>
         <li className="px-5 py-2">
-          <Link href="/teams">Teams</Link>
+          <Link href="/npl/teams">Teams</Link>
         </li>
       </ul>
     </nav>

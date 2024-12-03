@@ -6,12 +6,13 @@ export const metadata: Metadata = {
   description:
     "NPL 2024! Witness top teams compete in the Nepal Premier League's most thrilling season yet. Stay updated with schedules, scores, and news.",
   keywords:
-    "NPL 2024, Nepal Premier League, sports, football, cricket, teams, schedules, matches , Janakpur Bolts ,Pokhara Avengers, Biratnagar Kings, Lumbini Lions, Chitwan Rhinos , Karnali Yaks ,Sudur Paschim Riders,  ",
+    "NPL 2024, Nepal Premier League, sports, football, cricket, teams, schedules, matches , Janakpur Bolts ,Pokhara Avengers, Biratnagar Kings, Lumbini Lions, Chitwan Rhinos , Karnali Yaks ,Sudur Paschim Riders, Kathandu Garkhas  ",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon-16x16.png",
     apple: "/apple-touch-icon.png",
   },
+
   openGraph: {
     title: `Nepal Premier League : Festivals of Himalayas`,
     description:

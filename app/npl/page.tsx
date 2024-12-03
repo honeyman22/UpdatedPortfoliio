@@ -1,11 +1,13 @@
+import FixtureCard from "@/components/npl/FixtureCard";
 import TeamCard from "@/components/npl/TeamCard";
+import { nplFixtures } from "@/utils/deleteable/nplfixtures";
 import { npmTeams } from "@/utils/deleteable/nplteams";
 
 const NPLHome = () => {
   return (
-    <div className="grid  md:grid-cols-2 xl:grid-cols-4 px-6 sm:px-10 gap-10 ">
-      {npmTeams.map((team) => (
-        <TeamCard key={team.id} data={team} />
+    <div className="grid  md:grid-cols-2  px-6 sm:px-10 gap-y-6  md:gap-x-10 lg:gap-x-40 ">
+      {nplFixtures.map((team, index) => (
+        <FixtureCard key={index + 3} data={team} />
       ))}
     </div>
   );
