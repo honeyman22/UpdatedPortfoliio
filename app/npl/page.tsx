@@ -1,7 +1,5 @@
 import FixtureCard from "@/components/npl/FixtureCard";
-import TeamCard from "@/components/npl/TeamCard";
 import { nplFixtures } from "@/utils/deleteable/nplfixtures";
-import { npmTeams } from "@/utils/deleteable/nplteams";
 
 const NPLHome = () => {
   return (
