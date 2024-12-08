@@ -5,9 +5,11 @@ export interface TeamDataDto {
   image: string;
   primaryColor: string;
   secondaryColor: string;
+  score?:string
 }
 
 export interface FixtureDto {
+  id:number;
   team1: TeamDataDto;
   team2: TeamDataDto;
   isFinished: boolean;
