@@ -1,6 +1,7 @@
 import { FixtureDto } from "@/dtos/npl/teams-dto";
 import Image from "next/image";
 import React from "react";
+import moment from "moment";
 
 const FixtureCard = ({ data }: { data: FixtureDto }) => {
   return (
@@ -27,8 +28,11 @@ const FixtureCard = ({ data }: { data: FixtureDto }) => {
         </div>
       </div>
       <div className="flex items-center justify-center flex-col">
-        <h3 className="">Venue : {data?.venue} </h3>
-        <h3 className="">Time : {data?.date}</h3>
+        <h3 className="">Venue : TU Stadium </h3>
+        <h3 className="">
+          Time :{" "}
+          {moment(data?.date).toLocaleString().format("MMMM DD YYYY, HH:MM A")}
+        </h3>
         {data?.isFinished && <h4 className="">Won By : {data?.wonBy} </h4>}
       </div>
     </div>
