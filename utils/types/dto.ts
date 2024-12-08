@@ -1,7 +1,6 @@
-
-export interface projectCategoryType{
-    id:number|string;
-    name:string;
-    description:string;
-    src:string
+export interface ProjectCategoryType {
+  id: number | string;
+  name: string;
+  description: string;
+  src: string;
 }
