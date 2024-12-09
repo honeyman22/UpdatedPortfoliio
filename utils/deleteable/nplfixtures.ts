@@ -1,7 +1,8 @@
 import { FixtureDto } from "@/dtos/npl/teams-dto";
 
 export const nplFixtures: FixtureDto[] = [
-  { id:1,
+  {
+    id: 1,
     team1: {
       id: 1,
       name: "Biratnagar Kings",
@@ -9,7 +10,7 @@ export const nplFixtures: FixtureDto[] = [
       image: "/deleteable/npl/BIK.jpg",
       primaryColor: "#1A1A1A",
       secondaryColor: "#FF5733",
-      score:"127"
+      score: "127",
     },
     team2: {
       id: 2,
@@ -17,21 +18,24 @@ export const nplFixtures: FixtureDto[] = [
       shortName: "JAB",
       image: "/deleteable/npl/JAB.png",
       primaryColor: "#3498DB",
-      secondaryColor: "#2ECC71",score:"131/2"
+      secondaryColor: "#2ECC71",
+      score: "131/2",
     },
     isFinished: true,
     venue: "TU Ground",
     date: "2024-11-30T12:00:00",
     wonBy: "Janakpur Bolts won by 8 wickets",
   },
-  {  id:2,
+  {
+    id: 2,
     team1: {
       id: 3,
       name: "Kathmandu Gurkhas",
       shortName: "KAG",
       image: "/deleteable/npl/KAG.png",
       primaryColor: "#8E44AD",
-      secondaryColor: "#34495E",score:"111/9"
+      secondaryColor: "#34495E",
+      score: "111/9",
     },
     team2: {
       id: 4,
@@ -39,21 +43,24 @@ export const nplFixtures: FixtureDto[] = [
       shortName: "CHR",
       image: "/deleteable/npl/CHR.png",
       primaryColor: "#E74C3C",
-      secondaryColor: "#2C3E50",score:"114/5"
+      secondaryColor: "#2C3E50",
+      score: "114/5",
     },
     isFinished: true,
     venue: "Pokhara Stadium",
     date: "2024-12-02T09:00:00",
     wonBy: "Chitwan Rhinos won by 5 wickets",
   },
-  {  id:3,
+  {
+    id: 3,
     team1: {
       id: 2,
       name: "Janakpur Bolts",
       shortName: "JAB",
       image: "/deleteable/npl/JAB.png",
       primaryColor: "#3498DB",
-      secondaryColor: "#2ECC71",score:"142/2"
+      secondaryColor: "#2ECC71",
+      score: "142/2",
     },
     team2: {
       id: 5,
@@ -61,7 +68,8 @@ export const nplFixtures: FixtureDto[] = [
       shortName: "KAY",
       image: "/deleteable/npl/KAY.png",
       primaryColor: "#1ABC9C",
-      secondaryColor: "#16A085",score:"141/7"
+      secondaryColor: "#16A085",
+      score: "141/7",
     },
     isFinished: true,
     venue: "Chitwan Stadium",
@@ -69,14 +77,15 @@ export const nplFixtures: FixtureDto[] = [
     wonBy: "Janakpur Bolts won by 8 wickets",
   },
   {
-    id:4,
+    id: 4,
     team1: {
       id: 6,
       name: "Sudurpaschim Royals",
       shortName: "SPR",
       image: "/deleteable/npl/SPR.png",
       primaryColor: "#F39C12",
-      secondaryColor: "#D35400",score:"182/7"
+      secondaryColor: "#D35400",
+      score: "182/7",
     },
     team2: {
       id: 1,
@@ -84,7 +93,8 @@ export const nplFixtures: FixtureDto[] = [
       shortName: "BIK",
       image: "/deleteable/npl/BIK.jpg",
       primaryColor: "#1A1A1A",
-      secondaryColor: "#FF5733",score:"92",
+      secondaryColor: "#FF5733",
+      score: "92",
     },
     isFinished: true,
     venue: "Dhangadhi Stadium",
@@ -92,14 +102,15 @@ export const nplFixtures: FixtureDto[] = [
     wonBy: "Sudurpaschim won by 90 runs",
   },
   {
-    id:5,
+    id: 5,
     team1: {
       id: 5,
       name: "Chitwan Rhinos",
       shortName: "CHR",
       image: "/deleteable/npl/CHR.png",
       primaryColor: "#1ABC9C",
-      secondaryColor: "#16A085",score:"161/7"
+      secondaryColor: "#16A085",
+      score: "161/7",
     },
     team2: {
       id: 6,
@@ -107,7 +118,8 @@ export const nplFixtures: FixtureDto[] = [
       shortName: "POA",
       image: "/deleteable/npl/POA.png",
       primaryColor: "#F39C12",
-      secondaryColor: "#D35400",score:"74",
+      secondaryColor: "#D35400",
+      score: "74",
     },
     isFinished: true,
     venue: "Pokhara Stadium",
@@ -115,14 +127,15 @@ export const nplFixtures: FixtureDto[] = [
     wonBy: "Chitwon Rhinos won by 87 runs",
   },
   {
-    id:6,
+    id: 6,
     team1: {
       id: 3,
       name: "Karnali Yaks ",
       shortName: "KAY",
       image: "/deleteable/npl/KAY.png",
       primaryColor: "#8E44AD",
-      secondaryColor: "#34495E",score:"149/5"
+      secondaryColor: "#34495E",
+      score: "149/5",
     },
     team2: {
       id: 7,
@@ -138,14 +151,15 @@ export const nplFixtures: FixtureDto[] = [
     wonBy: "Kathmandu wons by 3 wickets",
   },
   {
-    id:7,
+    id: 7,
     team1: {
       id: 2,
       name: "Lumbini Lions",
       shortName: "LUL",
       image: "/deleteable/npl/LUL.png",
       primaryColor: "#3498DB",
-      secondaryColor: "#2ECC71",score:"191/7"
+      secondaryColor: "#2ECC71",
+      score: "191/7",
     },
     team2: {
       id: 8,
@@ -153,7 +167,8 @@ export const nplFixtures: FixtureDto[] = [
       shortName: "BIK",
       image: "/deleteable/npl/BIK.jpg",
       primaryColor: "#2980B9",
-      secondaryColor: "#D35400",score:"193/8"
+      secondaryColor: "#D35400",
+      score: "193/8",
     },
     isFinished: true,
     venue: "Dhangadhi Stadium",
@@ -161,14 +176,15 @@ export const nplFixtures: FixtureDto[] = [
     wonBy: "Biratnagar wins by 2 wickets",
   },
   {
-    id:8,
+    id: 8,
     team1: {
       id: 1,
       name: "Pokhara Avengers",
       shortName: "POA",
       image: "/deleteable/npl/POA.png",
       primaryColor: "#1A1A1A",
-      secondaryColor: "#FF5733",score:"138/7"
+      secondaryColor: "#FF5733",
+      score: "138/7",
     },
     team2: {
       id: 4,
@@ -176,21 +192,24 @@ export const nplFixtures: FixtureDto[] = [
       shortName: "JAB",
       image: "/deleteable/npl/JAB.png",
       primaryColor: "#E74C3C",
-      secondaryColor: "#2C3E50",score:"143/3"
+      secondaryColor: "#2C3E50",
+      score: "143/3",
     },
     isFinished: true,
     venue: "Biratnagar Stadium",
     date: "2024-12-05T09:00:00",
     wonBy: "Janakpur wons by 7 wickets",
-  },{
-    id:9,
+  },
+  {
+    id: 9,
     team1: {
       id: 1,
       name: "Sudurpaschim Royals",
       shortName: "SPR",
       image: "/deleteable/npl/SPR.png",
       primaryColor: "#1A1A1A",
-      secondaryColor: "#FF5733",score:"167/6"
+      secondaryColor: "#FF5733",
+      score: "167/6",
     },
     team2: {
       id: 2,
@@ -198,22 +217,24 @@ export const nplFixtures: FixtureDto[] = [
       shortName: "KAG",
       image: "/deleteable/npl/KAg.png",
       primaryColor: "#3498DB",
-      secondaryColor: "#2ECC71",score:"94"
+      secondaryColor: "#2ECC71",
+      score: "94",
     },
     isFinished: true,
     venue: "TU Ground",
     date: "2024-11-05T13:00:00",
-    wonBy:"Sudurpaschim won by 73 runs",
+    wonBy: "Sudurpaschim won by 73 runs",
   },
   {
-    id:10,
+    id: 10,
     team1: {
       id: 3,
       name: "Chitwan Rhinos",
       shortName: "CHR",
       image: "/deleteable/npl/CHR.png",
       primaryColor: "#8E44AD",
-      secondaryColor: "#34495E",score:"130/7"
+      secondaryColor: "#34495E",
+      score: "130/7",
     },
     team2: {
       id: 4,
@@ -221,7 +242,8 @@ export const nplFixtures: FixtureDto[] = [
       shortName: "KAY",
       image: "/deleteable/npl/KAY.png",
       primaryColor: "#E74C3C",
-      secondaryColor: "#2C3E50",score:"132/4"
+      secondaryColor: "#2C3E50",
+      score: "132/4",
     },
     isFinished: true,
     venue: "Pokhara Stadium",
@@ -229,14 +251,15 @@ export const nplFixtures: FixtureDto[] = [
     wonBy: "Karnali Yaks won by 6 wickets",
   },
   {
-    id:11,
+    id: 11,
     team1: {
       id: 2,
       name: "Lumbini Lions",
       shortName: "LUL",
       image: "/deleteable/npl/LUL.png",
       primaryColor: "#3498DB",
-      secondaryColor: "#2ECC71",score:"170/5"
+      secondaryColor: "#2ECC71",
+      score: "170/5",
     },
     team2: {
       id: 5,
@@ -244,7 +267,8 @@ export const nplFixtures: FixtureDto[] = [
       shortName: "POA",
       image: "/deleteable/npl/POA.png",
       primaryColor: "#1ABC9C",
-      secondaryColor: "#16A085",score:"176/0"
+      secondaryColor: "#16A085",
+      score: "176/0",
     },
     isFinished: true,
     venue: "Chitwan Stadium",
@@ -252,14 +276,15 @@ export const nplFixtures: FixtureDto[] = [
     wonBy: "Pokara wons by 10 wickets",
   },
   {
-    id:12,
+    id: 12,
     team1: {
       id: 6,
       name: "Sudurpaschim Royals",
       shortName: "SPR",
       image: "/deleteable/npl/SPR.png",
       primaryColor: "#F39C12",
-      secondaryColor: "#D35400",score:"187/4"
+      secondaryColor: "#D35400",
+      score: "187/4",
     },
     team2: {
       id: 1,
@@ -267,7 +292,8 @@ export const nplFixtures: FixtureDto[] = [
       shortName: "LUL",
       image: "/deleteable/npl/LUL.jpg",
       primaryColor: "#1A1A1A",
-      secondaryColor: "#FF5733",score:"142/9"
+      secondaryColor: "#FF5733",
+      score: "142/9",
     },
     isFinished: true,
     venue: "Dhangadhi Stadium",
@@ -275,14 +301,15 @@ export const nplFixtures: FixtureDto[] = [
     wonBy: "Sudurpaschim won by 45 runs",
   },
   {
-    id:13,
+    id: 13,
     team1: {
       id: 5,
       name: "Karnali Yaks",
       shortName: "KAY",
       image: "/deleteable/npl/KAY.png",
       primaryColor: "#1ABC9C",
-      secondaryColor: "#16A085",score:"133"
+      secondaryColor: "#16A085",
+      score: "133",
     },
     team2: {
       id: 6,
@@ -290,7 +317,8 @@ export const nplFixtures: FixtureDto[] = [
       shortName: "BIK",
       image: "/deleteable/npl/BIK.jpg",
       primaryColor: "#F39C12",
-      secondaryColor: "#D35400",score:"126/8"
+      secondaryColor: "#D35400",
+      score: "126/8",
     },
     isFinished: true,
     venue: "Pokhara Stadium",
@@ -298,14 +326,15 @@ export const nplFixtures: FixtureDto[] = [
     wonBy: "Karnali wons by 7 runs",
   },
   {
-    id:14,
+    id: 14,
     team1: {
       id: 3,
       name: "Janakpur Bolts",
       shortName: "JAB",
       image: "/deleteable/npl/JAB.png",
       primaryColor: "#8E44AD",
-      secondaryColor: "#34495E",score:"136/9"
+      secondaryColor: "#34495E",
+      score: "136/9",
     },
     team2: {
       id: 7,
@@ -313,7 +342,8 @@ export const nplFixtures: FixtureDto[] = [
       shortName: "LUL",
       image: "/deleteable/npl/LUL.png",
       primaryColor: "#C0392B",
-      secondaryColor: "#ECF0F1",score:"135/8",
+      secondaryColor: "#ECF0F1",
+      score: "135/8",
     },
     isFinished: true,
     venue: "Kathmandu Stadium",
@@ -321,7 +351,7 @@ export const nplFixtures: FixtureDto[] = [
     wonBy: "Janakpur wons by 1 runs",
   },
   {
-    id:15,
+    id: 15,
     team1: {
       id: 2,
       name: "Sudurpaschim Royals",
@@ -344,7 +374,7 @@ export const nplFixtures: FixtureDto[] = [
     wonBy: "",
   },
   {
-    id:16,
+    id: 16,
     team1: {
       id: 1,
       name: "Chitwan Rhnios",
@@ -366,7 +396,8 @@ export const nplFixtures: FixtureDto[] = [
     date: "2024-12-10T09:00:00",
     wonBy: "",
   },
-  { id:17,
+  {
+    id: 17,
     team1: {
       id: 1,
       name: "Karnali Yaks",
@@ -383,12 +414,13 @@ export const nplFixtures: FixtureDto[] = [
       primaryColor: "#3498DB",
       secondaryColor: "#2ECC71",
     },
-    isFinished:false,
+    isFinished: false,
     venue: "TU Ground",
     date: "2024-12-10T13:00:00",
     wonBy: "Janakpur Bolts",
   },
-  {  id:18,
+  {
+    id: 18,
     team1: {
       id: 3,
       name: "Janakpur Bolts",
@@ -410,7 +442,8 @@ export const nplFixtures: FixtureDto[] = [
     date: "2024-12-11T09:00:00",
     wonBy: "Chitwan Rhinos",
   },
-  {  id:19,
+  {
+    id: 19,
     team1: {
       id: 2,
       name: "Kathmandu Gorkhas",
@@ -433,7 +466,7 @@ export const nplFixtures: FixtureDto[] = [
     wonBy: "Janakpur Bolts",
   },
   {
-    id:20,
+    id: 20,
     team1: {
       id: 6,
       name: "Pokhara Avengers",
@@ -456,7 +489,7 @@ export const nplFixtures: FixtureDto[] = [
     wonBy: "",
   },
   {
-    id:21,
+    id: 21,
     team1: {
       id: 5,
       name: "Janakpur Bolts",
@@ -479,7 +512,7 @@ export const nplFixtures: FixtureDto[] = [
     wonBy: "",
   },
   {
-    id:22,
+    id: 22,
     team1: {
       id: 3,
       name: "Lumbini Lions",
@@ -502,7 +535,7 @@ export const nplFixtures: FixtureDto[] = [
     wonBy: "",
   },
   {
-    id:23,
+    id: 23,
     team1: {
       id: 2,
       name: "Biratnagar Kings",
@@ -525,7 +558,7 @@ export const nplFixtures: FixtureDto[] = [
     wonBy: "",
   },
   {
-    id:24,
+    id: 24,
     team1: {
       id: 1,
       name: "Pokara Avengers",
@@ -546,8 +579,9 @@ export const nplFixtures: FixtureDto[] = [
     venue: "Biratnagar Stadium",
     date: "2024-12-14T09:00:00",
     wonBy: "",
-  },{
-    id:25,
+  },
+  {
+    id: 25,
     team1: {
       id: 1,
       name: "Chitwan Rhinos",
@@ -570,7 +604,7 @@ export const nplFixtures: FixtureDto[] = [
     wonBy: "Janakpur Bolts",
   },
   {
-    id:26,
+    id: 26,
     team1: {
       id: 3,
       name: "Biratnagar Kings",
@@ -593,7 +627,7 @@ export const nplFixtures: FixtureDto[] = [
     wonBy: "Chitwan Rhinos",
   },
   {
-    id:27,
+    id: 27,
     team1: {
       id: 2,
       name: "Pokhara Avengers",
@@ -606,7 +640,7 @@ export const nplFixtures: FixtureDto[] = [
       id: 5,
       name: "Sudurpaschime Royals",
       shortName: "SPR",
-      
+
       image: "/deleteable/npl/SPR.png",
       primaryColor: "#1ABC9C",
       secondaryColor: "#16A085",
@@ -617,7 +651,7 @@ export const nplFixtures: FixtureDto[] = [
     wonBy: "Janakpur Bolts",
   },
   {
-    id:28,
+    id: 28,
     team1: {
       id: 6,
       name: "Sudurpaschim Royals",
@@ -640,12 +674,12 @@ export const nplFixtures: FixtureDto[] = [
     wonBy: "",
   },
   {
-    id:29,
+    id: 29,
     team1: {
       id: 5,
       name: "TAB",
       shortName: "TAB",
-      image: "/deleteable/npl/TAB.png",
+
       primaryColor: "#1ABC9C",
       secondaryColor: "#16A085",
     },
@@ -653,7 +687,7 @@ export const nplFixtures: FixtureDto[] = [
       id: 6,
       name: "TAB",
       shortName: "TAB",
-      image: "/deleteable/npl/TAB.png",
+
       primaryColor: "#F39C12",
       secondaryColor: "#D35400",
     },
@@ -663,12 +697,12 @@ export const nplFixtures: FixtureDto[] = [
     wonBy: "",
   },
   {
-    id:30,
+    id: 30,
     team1: {
       id: 3,
       name: "TAB",
       shortName: "TAB",
-      image: "/deleteable/npl/TAB.png",
+
       primaryColor: "#8E44AD",
       secondaryColor: "#34495E",
     },
@@ -676,7 +710,7 @@ export const nplFixtures: FixtureDto[] = [
       id: 7,
       name: "TAB",
       shortName: "TAB",
-      image: "/deleteable/npl/TAB.png",
+
       primaryColor: "#C0392B",
       secondaryColor: "#ECF0F1",
     },
@@ -686,12 +720,12 @@ export const nplFixtures: FixtureDto[] = [
     wonBy: "",
   },
   {
-    id:31,
+    id: 31,
     team1: {
       id: 2,
       name: "TAB",
       shortName: "TAB",
-      image: "/deleteable/npl/TAB.png",
+
       primaryColor: "#3498DB",
       secondaryColor: "#2ECC71",
     },
@@ -699,7 +733,7 @@ export const nplFixtures: FixtureDto[] = [
       id: 8,
       name: "TAB",
       shortName: "TAB",
-      image: "/deleteable/npl/TAB.png",
+
       primaryColor: "#2980B9",
       secondaryColor: "#D35400",
     },
@@ -709,7 +743,7 @@ export const nplFixtures: FixtureDto[] = [
     wonBy: "",
   },
   {
-    id:32,
+    id: 32,
     team1: {
       id: 1,
       name: "TAB",
@@ -717,14 +751,15 @@ export const nplFixtures: FixtureDto[] = [
       image: "/deleteable/npl/TAB.jpg",
       primaryColor: "#1A1A1A",
       secondaryColor: "#FF5733",
-      score:""
+      score: "",
     },
     team2: {
       id: 4,
       name: "TAB",
       shortName: "TAB",
-      image: "/deleteable/npl/TAB.png",
-      primaryColor: "#E74C3C",score:"",
+
+      primaryColor: "#E74C3C",
+      score: "",
       secondaryColor: "#2C3E50",
     },
     isFinished: false,

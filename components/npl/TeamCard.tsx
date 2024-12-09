@@ -20,7 +20,9 @@ const TeamCard = ({ data }: { data: TeamDataDto }) => {
       }}
     >
       <div className="absolute inset-0 h-[200px]  flex flex-col justify-center items-center text-white p-6">
-        <Image alt={data.name} src={data?.image} width={100} height={100} />
+        {data?.image && (
+          <Image alt={data.name} src={data?.image} width={100} height={100} />
+        )}
         <h2 className="text-2xl text-white font-semibold">{data.shortName}</h2>
       </div>
     </li>

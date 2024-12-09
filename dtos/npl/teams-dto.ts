@@ -2,14 +2,14 @@ export interface TeamDataDto {
   id: number;
   name: string;
   shortName: string;
-  image: string;
+  image?: string;
   primaryColor: string;
   secondaryColor: string;
-  score?:string
+  score?: string;
 }
 
 export interface FixtureDto {
-  id:number;
+  id: number;
   team1: TeamDataDto;
   team2: TeamDataDto;
   isFinished: boolean;
