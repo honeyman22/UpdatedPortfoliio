@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Bitter } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/layout/Header";
+import Navbar from "@/components/new-design/NavBar";
 
 const inter = Bitter({
   subsets: ["cyrillic"],
@@ -57,7 +57,7 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        <Header />
+        <Navbar />
         <div className="mt-[112px]"></div>
         {children}
       </body>
