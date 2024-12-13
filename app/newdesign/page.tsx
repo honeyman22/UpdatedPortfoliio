@@ -1,4 +1,6 @@
-import AboutSection from "@/components/new-design/AboutSection";import ExperienceSection from "@/components/new-design/ExperienceSection";
+import AboutSection from "@/components/new-design/AboutSection";
+import ContactSection from "@/components/new-design/ContactSection";
+import ExperienceSection from "@/components/new-design/ExperienceSection";
 import FeaturedProjects from "@/components/new-design/FeaturedProjects";
 import HeroSection from "@/components/new-design/HeroSection";
 import ProjectGallery from "@/components/new-design/ProjectGallery";
@@ -12,6 +14,7 @@ export default function Home() {
       <FeaturedProjects />
       <ProjectGallery />
       <ExperienceSection />
+      <ContactSection />
     </>
   );
 }
