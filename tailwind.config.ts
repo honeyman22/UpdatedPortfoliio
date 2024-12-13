@@ -1,5 +1,3 @@
-// tailwind.config.js//
-//
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -72,6 +70,7 @@ module.exports = {
         "9xl": "96rem",
       },
       animation: {
+        "color-shift": "colorShift 8s infinite alternate",
         "fade-in": "fadeIn 0.5s ease-in",
         "fade-out": "fadeOut 0.5s ease-out",
         "slide-up": "slideUp 0.5s ease-out",
@@ -121,6 +120,13 @@ module.exports = {
         float: {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-10px)" },
+        },
+        colorShift: {
+          "0%": { "--grid-color": "#FF5733" }, // Red-Orange
+          "25%": { "--grid-color": "#33FF57" }, // Green
+          "50%": { "--grid-color": "#3357FF" }, // Blue
+          "75%": { "--grid-color": "#F333FF" }, // Purple-Pink
+          "100%": { "--grid-color": "#FF5733" }, // Back to Red-Orange
         },
       },
       aspectRatio: {

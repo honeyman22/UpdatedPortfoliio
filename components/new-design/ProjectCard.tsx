@@ -1,5 +1,4 @@
-import Image from "next/image";
-import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import Image from "next/image";import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 export default function ProjectCard({
   project,
 }: Readonly<{
@@ -26,7 +25,9 @@ export default function ProjectCard({
       </div>
       <div className="p-6">
         <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
-        <p className="text-neutral-300 mb-4">{project.description}</p>
+        <p className="text-neutral-300 line-clamp-4 mb-4">
+          {project.description}
+        </p>
         <div className="flex flex-wrap gap-2 mb-4">
           {project.technologies.map((tech, index) => (
             <span

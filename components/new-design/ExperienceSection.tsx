@@ -4,7 +4,7 @@ const experiences = [
   {
     duration: "2022 - Present",
     role: "Senior Frontend Developer",
-    company: "TechCorp Solutions",
+    company: "AITC International",
     icon: <FaBriefcase />,
     reverse: false,
     responsibilities: [
@@ -16,7 +16,7 @@ const experiences = [
   {
     duration: "2020 - 2022",
     role: "Frontend Developer",
-    company: "WebDev Studios",
+    company: "Ultimodeal Online Shopping",
     icon: <FaCode size={24} />,
     reverse: true,
     responsibilities: [
@@ -28,7 +28,7 @@ const experiences = [
   {
     duration: "2019 - 2020",
     role: "Junior Web Developer",
-    company: "Digital Innovations",
+    company: "Crown Innovations",
     icon: <FaLaptopCode />,
     reverse: false,
     responsibilities: [

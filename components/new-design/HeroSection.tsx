@@ -1,4 +1,5 @@
-export default function HeroSection() {  return (
+export default function HeroSection() {
+  return (
     <section
       id="navbar_hero"
       className="min-h-screen bg-neutral-900 relative overflow-hidden"
@@ -36,6 +37,7 @@ export default function HeroSection() {  return (
           </div>
         </div>
       </div>
+      <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0)_0%,rgba(0,0,0,0.8)_100%)]"></div>
 
       <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0)_0%,rgba(0,0,0,0.8)_100%)]"></div>
       <div className="absolute inset-0 z-0 bg-[linear-gradient(to_right,#00000080_1px,transparent_1px),linear-gradient(to_bottom,#00000080_1px,transparent_1px)] bg-[size:24px_24px]"></div>

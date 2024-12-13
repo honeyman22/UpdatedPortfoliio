@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { toast } from "react-toastify";
 export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
@@ -8,12 +9,41 @@ export default function ContactForm() {
     message: "",
   });
 
+  const onSubmit = async () => {
+    try {
+      const apiUrl = process.env.NEXT_PUBLIC_BASE_URL;
+      const res = await fetch(`${apiUrl}/contactus`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+
+      if (res.status === 201) {
+        toast.success("Form submitted successfully!");
+      } else {
+        toast.error("Something went wrong");
+      }
+    } catch (error: any) {
+      toast.error(error?.response?.data?.message || "Something went wrong");
+    }
+  };
+
   return (
     <div className="bg-neutral-800/50 rounded-xl border border-neutral-700 p-6">
       <h3 className="text-xl font-bold text-white mb-6">Send Me a Message</h3>
       <form
         onSubmit={(data) => {
-          console.log(data);
+          data.preventDefault();
+          onSubmit();
         }}
         className="space-y-6"
       >

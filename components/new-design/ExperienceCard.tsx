@@ -1,4 +1,5 @@
-import React from "react";export default function ExperienceCard({
+import React from "react";import { FaChevronRight } from "react-icons/fa";
+export default function ExperienceCard({
   experience,
 }: Readonly<{
   experience: {
@@ -17,7 +18,7 @@ import React from "react";export default function ExperienceCard({
       <div
         className={`flex-1 w-full md:w-5/12 ${
           experience.reverse ? "md:pl-8" : "md:pr-8"
-        } ${experience.reverse ? "" : "md:text-right"} order-2 md:order-1`}
+        } ${experience.reverse ? "" : "md:text-right"}  md:order-1`}
       >
         <div className="p-6 bg-neutral-800/50 rounded-xl border border-neutral-700 hover:border-primary-500 transition-all duration-300">
           <span className="inline-block px-4 py-2 rounded-full bg-primary-500/10 text-primary-500 text-sm font-medium mb-4">
@@ -30,7 +31,8 @@ import React from "react";export default function ExperienceCard({
           <ul className="text-neutral-300 space-y-2">
             {experience.responsibilities.map((item, index) => (
               <li key={index + 4} className="flex items-start">
-                <i className="fas fa-chevron-right text-primary-500 mt-1.5 mr-2"></i>
+                <FaChevronRight className=" text-primary-500 mt-1.5 mr-2" />
+
                 <span>{item}</span>
               </li>
             ))}

@@ -1,5 +1,4 @@
-import type { Metadata } from "next";
-import { Bitter } from "next/font/google";
+import type { Metadata } from "next";import { Bitter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/new-design/NavBar";
 
@@ -56,7 +55,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={inter.className}>
+      <body className={inter.className + " bg-neutral-900"}>
         <Navbar />
         <div className="mt-[112px]"></div>
         {children}
