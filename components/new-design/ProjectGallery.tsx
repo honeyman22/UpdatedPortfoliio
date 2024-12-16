@@ -1,9 +1,10 @@
-import ProjectCard from "./ProjectCard";const projects = [
+import ProjectCard from "./ProjectCard";
+const projects = [
   {
     title: "Fertility Care Landing Page",
     description:
       "The Fertility Care Landing Page is a dedicated platform designed to provide individuals and couples with essential information, guidance, and support on their fertility journey. The page aims to create a warm, trustworthy, and user-friendly experience that reflects the sensitivity and care associated with fertility treatments.",
-    image: "/deleteable/npl/JAB.png",
+    image: "/deleteable/projects/fertilitycare.jpg",
     technologies: ["Next.js"],
     githubLink: "https://github.com/honeyman22/FertilityCare",
     liveLink: "https://fertility-care.vercel.app/",
@@ -52,7 +53,7 @@ import ProjectCard from "./ProjectCard";const projects = [
 
 export default function ProjectGallery() {
   return (
-    <section id="project" className="py-20 bg-neutral-900">
+    <section id="projects" className="py-20 bg-neutral-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-white mb-4 font-heading">

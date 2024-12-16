@@ -57,7 +57,8 @@ export default function ExperienceSection() {
         {/* Skills Summary */}
         <div className="mt-16 text-center">
           <a
-            href="/resume"
+            href="/deleteable/projects/resume.pdf"
+            download="Resume.pdf"
             className="inline-flex items-center px-6 py-3 rounded-lg bg-neutral-800 text-white hover:bg-neutral-700 transition-colors"
           >
             <i className="fas fa-download mr-2"></i>

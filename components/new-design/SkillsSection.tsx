@@ -1,5 +1,4 @@
-const skills = [
-  {
+const skills = [  {
     category: "Frontend Development",
     skills: [
       { name: "HTML5 & CSS3", level: 95 },
@@ -8,11 +7,11 @@ const skills = [
     ],
   },
   {
-    category: "UI/UX Design",
+    category: "Backend Development",
     skills: [
-      { name: "Responsive Design", level: 90 },
-      { name: "Tailwind CSS", level: 85 },
-      { name: "User Experience", level: 80 },
+      { name: "Node.js", level: 80 },
+      { name: "Nest.js", level: 65 },
+      { name: "Express.js", level: 75 },
     ],
   },
   {
@@ -42,12 +41,12 @@ export default function SkillsSection() {
               key={index + 5}
               className="p-6 bg-neutral-800/50 rounded-xl border border-neutral-700 hover:border-primary-500 transition-colors"
             >
-              <h3 className="text-xl font-bold text-white">
+              <h3 className="text-xl font-bold mb-3 text-white">
                 {skillGroup.category}
               </h3>
               {skillGroup.skills.map((skill, idx) => (
-                <div key={idx + 6}>
-                  <p className="text-neutral-300">{skill.name}</p>
+                <div key={idx + 6} className="mb-3">
+                  <p className="text-neutral-300 mb-2">{skill.name}</p>
                   <div className="w-full bg-neutral-700 rounded-full h-2">
                     <div
                       className="bg-primary-500 h-2 rounded-full"

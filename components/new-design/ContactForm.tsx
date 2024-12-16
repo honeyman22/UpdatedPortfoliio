@@ -1,6 +1,7 @@
 "use client";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { toast } from "react-toastify";
+import emailjs from "@emailjs/browser";
 export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
@@ -8,17 +9,21 @@ export default function ContactForm() {
     subject: "",
     message: "",
   });
+  const form = useRef<HTMLFormElement | null>(null);
 
-  const onSubmit = async () => {
+  const onSubmit = async (e: { preventDefault: () => void }) => {
+    e.preventDefault();
     try {
-      const apiUrl = process.env.NEXT_PUBLIC_BASE_URL;
-      const res = await fetch(`${apiUrl}/contactus`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      console.log(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID);
+      const res = await emailjs.sendForm(
+        //@ts-ignore
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: process.env.NEXT_PUBLIC_EMAILJS_USER_ID,
+        }
+      );
 
       setFormData({
         name: "",
@@ -40,13 +45,7 @@ export default function ContactForm() {
   return (
     <div className="bg-neutral-800/50 rounded-xl border border-neutral-700 p-6">
       <h3 className="text-xl font-bold text-white mb-6">Send Me a Message</h3>
-      <form
-        onSubmit={(data) => {
-          data.preventDefault();
-          onSubmit();
-        }}
-        className="space-y-6"
-      >
+      <form ref={form} onSubmit={onSubmit} className="space-y-6">
         {["name", "email", "subject"].map((field, index) => (
           <div key={index + 5}>
             <label

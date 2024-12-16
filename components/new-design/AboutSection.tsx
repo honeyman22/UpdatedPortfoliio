@@ -32,13 +32,22 @@ export default function AboutSection() {
             </div>
 
             <h3 className="text-2xl font-bold text-white font-heading">
-              Passionate about Creating Exceptional User Experiences
+              Full-Stack Developer: Crafting Seamless, Scalable Web Applications
             </h3>
 
             <p className="text-neutral-300 leading-relaxed">
-              With a keen eye for design and a love for clean code, I specialize
-              in building modern web applications that not only look great but
-              also deliver outstanding performance.
+              As a full-stack developer, I work with both frontend and backend
+              technologies to create seamless, dynamic web applications. On the
+              frontend, I specialize in frameworks like React and Next.js,
+              building responsive interfaces that enhance user experiences. On
+              the backend, I use Node.js and NestJS to design efficient APIs and
+              services. I&apos;m also skilled in working with PostgreSQL,
+              ensuring my applications are data-driven and reliable. My
+              experience with Docker helps me deploy applications smoothly
+              across different environments. With a background in Software
+              Engineering, I&apos;m passionate about logic, problem-solving, and
+              system design, allowing me to create efficient, scalable, and
+              maintainable solutions.
             </p>
           </div>
         </div>

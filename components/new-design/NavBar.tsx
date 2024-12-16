@@ -54,9 +54,13 @@ export default function Navbar() {
             >
               Contact
             </a>
-            <button className="px-4 py-2 rounded-lg bg-primary-500 text-white hover:bg-primary-600 transition-colors">
+            <a
+              href="/deleteable/projects/resume.pdf"
+              download="Resume.pdf"
+              className="px-4 py-2 rounded-lg bg-primary-500 text-white hover:bg-primary-600 transition-colors"
+            >
               Resume
-            </button>
+            </a>
           </div>
 
           <div className="lg:hidden">

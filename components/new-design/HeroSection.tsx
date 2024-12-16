@@ -1,5 +1,4 @@
-export default function HeroSection() {
-  return (
+export default function HeroSection() {  return (
     <section
       id="navbar_hero"
       className="min-h-screen bg-neutral-900 relative overflow-hidden"
@@ -9,7 +8,7 @@ export default function HeroSection() {
           <div className="mt-10 md:mt-16">
             <div className="text-center">
               <h1 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl font-heading">
-                <span className="block">Frontend Developer</span>
+                <span className="block">Full Stack Developer</span>
                 <span className="block text-primary-500 mt-3">
                   Crafting Digital Experiences
                 </span>
