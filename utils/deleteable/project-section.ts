@@ -1,17 +1,18 @@
-export const projectCategory = [  {
+export const projectCategory = [
+  {
     id: 1,
     name: "Custom Website Development",
     description:
       "Craft a unique online presence with tailored website solutions. From responsive, user-friendly designs to robust web applications, I create websites that captivate and convert. Click here to explore how my custom websites can enhance your brand.",
     link: "/website-development",
   },
-  {
-    id: 2,
-    name: "Mobile Application Development",
-    description:
-      "Create impactful mobile apps with custom solutions for iOS and Android. From intuitive interfaces to powerful features, I deliver apps that stand out and perform. Click here to see how I can bring your app vision to life.",
-    link: "/mobile-applications",
-  },
+  // {
+  //   id: 2,
+  //   name: "Mobile Application Development",
+  //   description:
+  //     "Create impactful mobile apps with custom solutions for iOS and Android. From intuitive interfaces to powerful features, I deliver apps that stand out and perform. Click here to see how I can bring your app vision to life.",
+  //   link: "/mobile-applications",
+  // },
   {
     id: 3,
     name: "CMS Solutions",
