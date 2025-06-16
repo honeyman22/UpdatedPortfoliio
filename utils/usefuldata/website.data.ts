@@ -1,5 +1,4 @@
-export const websiteData = [
-  {
+export const websiteData = [  {
     id: "1",
     link: "https://aitc.ai/",
     image: "/websites/aitc.png",
@@ -30,5 +29,13 @@ export const websiteData = [
     name: "Cafeboh",
     description:
       "Cafeboh is a cozy and contemporary café portfolio website showcasing our signature coffee blends, handcrafted pastries, warm ambiance, and community events. Designed to entice coffee lovers, it highlights our menu, gallery, location, and story—all in one inviting digital space.",
+  },
+  {
+    id: "5",
+    link: "https://awesomehandicrafts.com.np/",
+    image: "/websites/awesome.png",
+    name: "Awesome Handicrafts",
+    description:
+      "Crafted by Awesome Handicrafts, this brand blends tradition and creativity from the heart of Bhaktapur, Nepal. Specializing in felt goods, hand-knitted items, and luxurious pashmina, we empower local artisans while preserving Nepal’s rich handmade heritage.",
   },
 ];
