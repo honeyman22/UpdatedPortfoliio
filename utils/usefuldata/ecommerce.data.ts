@@ -1,11 +1,18 @@
-export const ecommerceData = [
-  {
+export const ecommerceData = [  {
     id: "1",
     link: "https://sandboxlive.annapurnagalleries.com/",
     image: "/websites/annapurna.png",
     name: "Annapurna Galleries",
     description:
       "Annapurna Galleries, developed by AITC International, is a premier e-commerce platform for buying and selling artworks, including paintings, prints, and sculptures, connecting artists and collectors with a seamless and secure shopping experience.",
+  },
+  {
+    id: "2",
+    link: "https://eurekatraders.org/",
+    image: "/websites/eureka.png",
+    name: "Eureka Traders",
+    description:
+      "Eureka Traders is a premier felt manufacturer specializing in handmade products crafted by skilled Nepali women artisans using traditional techniques. From home décor and lifestyle goods to festive items and slippers, our customizable offerings blend culture, creativity, and comfort. With a focus on innovation, ethical practices, and artisan empowerment, we export globally to markets including the USA, UK, Australia, and Germany—bringing the spirit of Nepal to the world.",
   },
 ];
 
