@@ -22,15 +22,15 @@ const ContactSection = () => {
   const contactdetails: Array<IContactDetails> = [
     {
       name: "Address",
-      address: "Kharibot Road, Mahalaxmi, Lalitpur, Nepal",
+      address: "SE4 1BH, London, United Kingdom",
       icon: <MdOutlineLocationOn fill="#003366" size={40} />,
-      link: "https://www.google.com/maps/place/27%C2%B039'34.1%22N+85%C2%B020'48.1%22E/@27.6594632,85.3454643,19z/data=!3m1!4b1!4m13!1m8!3m7!1s0x39eb175804d46333:0x407a3f6860e99df2!2sImadol,+Mahalaxmi!3b1!8m2!3d27.6564024!4d85.3420486!16s%2Fm%2F04n62h6!3m3!8m2!3d27.659462!4d85.346682?entry=ttu",
+      link: "https://www.google.com/maps/place/195+Malpas+Rd,+London+SE4+1BH/@51.467425,-0.036033,19.01z/data=!4m15!1m8!3m7!1s0x48760250a696c275:0x8ec1179c46959d7a!2sMalpas+Rd,+London+SE4+1BH!3b1!8m2!3d51.4668787!4d-0.0354684!16s%2Fg%2F1tgk02v6!3m5!1s0x48760250ab31726d:0x205edd6223286f64!8m2!3d51.467676!4d-0.035371!16s%2Fg%2F11c4ww0kjg?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoKLDEwMDc5MjA3M0gBUAM%3D",
     },
     {
       name: "Phone Number",
-      address: "+977 9825275948",
+      address: "+44 7979030258",
       icon: <MdOutlinePhoneInTalk fill="#003366" size={32} />,
-      link: "tel:+977 9825275948",
+      link: "tel:+44 7979030258",
     },
     {
       name: "Email",

@@ -1,4 +1,4 @@
-import BlogSection from "@/components/user/blog/BlogSection";
+
 import ContactSection from "@/components/user/contact/ContactSection";
 import EducationSection from "@/components/user/education/EducationSection";
 import ExperienceSection from "@/components/user/experiences/ExperienceSection";
@@ -13,8 +13,7 @@ export default function Home() {
       <SkillSection />
       <ProjectSection />
       <ExperienceSection />
-      <EducationSection />
-      <BlogSection />
+      {/* <EducationSection /> */}
       <ContactSection />
     </main>
   );
