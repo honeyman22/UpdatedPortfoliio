@@ -1,11 +1,10 @@
 "use client";
-
 import CustomInput from "@/components/common/CommonInput";
 import { contactSchema } from "@/schemas/contactSechema";
 import { yupResolver } from "@hookform/resolvers/yup";
 import React from "react";
 import { useForm } from "react-hook-form";
-
+import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -20,23 +19,30 @@ const ContactForm = () => {
     mode: "all",
   });
 
+  const formRef = React.useRef<HTMLFormElement>(null);
   const onSubmit = async (data: any) => {
     try {
-      const apiUrl = process.env.NEXT_PUBLIC_BASE_URL;
-      const res = await fetch(`${apiUrl}/contactus`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      });
-
-      if (res.status === 201) {
-        toast.success("Form submitted successfully!");
-        reset();
-      } else {
-        toast.error("Something went wrong");
-      }
+      if (!formRef.current) return;
+      await emailjs
+        .sendForm(
+          process.env.NEXT_PUBLIC_EMAIL_SERVICE_ID!,
+          process.env.NEXT_PUBLIC_EMAIL_TEMPLATE_ID!,
+          formRef.current,
+          {
+            publicKey: process.env.NEXT_PUBLIC_EMAIL_PUBLIC_KEY!,
+          },
+        )
+        .then(
+          () => {
+            console.log("sucess");
+            toast.success("Form submitted successfully!");
+            reset();
+          },
+          (error) => {
+            toast.error("Something went wrong");
+            console.log("here", error);
+          },
+        );
     } catch (error: any) {
       toast.error(error?.response?.data?.message || "Something went wrong");
     }
@@ -45,6 +51,7 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
+      ref={formRef}
       className="flex w-full flex-col gap-4 rounded-2xl bg-white p-8 drop-shadow-[0_4px_8px_rgba(0,0,0,0.1)] xl:w-[541px]   "
     >
       <CustomInput
