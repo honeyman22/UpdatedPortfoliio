@@ -10,11 +10,15 @@ const ReusableHeader = ({
 }) => {
   return (
     <TopDownAnimation>
-      <div className="pb-10  ">
-        <h2 className="section-title text-center text-[48px] tracking-wide  text-highlight font-semibold">
+      <div className="pb-10 flex flex-col items-center justify-center">
+        <h2
+          className="section-title text-center text-[48px] leading-tight text-highlight font-semibold"
+        >
           {title}
         </h2>
-        <p className="text-base  text-center text-[#003366]">{message}</p>
+        <p className="text-base md:w-[540px] text-center text-[#003366]">
+          {message}
+        </p>
       </div>
     </TopDownAnimation>
   );

@@ -5,14 +5,19 @@ import { experiences } from "@/utils/deleteable/education";
 
 const ExperienceSection = () => {
   return (
-    <section className=" bg-primary py-10 sm:py-20 px-4 sm:px-10  w-full">
+    <section
+      id="experience"
+      className=" bg-primary py-10 sm:py-20 px-4 sm:px-10  w-full"
+    >
       <ReusableHeader
-        title="My Experiences"
+        title="Experiences"
         message="Leverage my extensive background in frontend development to bring your projects to life with precision, creativity, and innovation."
       />
       <div className="grid lg:grid-cols-2 gap-6">
         {experiences.map((item) => (
-          <ExperienceCard key={item.id} item={item} />
+          <div key={item.id}>
+            <ExperienceCard item={item} />
+          </div>
         ))}
       </div>
     </section>

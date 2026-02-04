@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-
+const plugin = require("tailwindcss/plugin");
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -31,11 +31,15 @@ const config: Config = {
       boxShadow: {
         custom: "0 4px 6px rgba(0, 0, 0, 0.1)",
       },
+      screens: {
+        lg: "1040px",
+      },
       animation: {
         pop: "pop 3s ease-in-out infinite",
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
+
       keyframes: {
         pop: {
           "0%, 100%": { transform: "scale(1.2)", opacity: "0.8" },
@@ -49,6 +53,24 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addUtilities }: { addUtilities: any }) {
+      addUtilities({
+        ".list-check": {
+          listStyle: "none",
+        },
+        ".list-check li": {
+          position: "relative",
+          paddingLeft: "1.5rem",
+        },
+        ".list-check li::before": {
+          content: '"👉"',
+          position: "absolute",
+          left: "0",
+          color: "green",
+        },
+      });
+    }),
+  ],
 };
 export default config;

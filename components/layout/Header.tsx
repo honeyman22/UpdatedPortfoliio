@@ -32,14 +32,7 @@ export const menu: IMenus[] = [
     name: "Experience",
     url: "#experience",
   },
-  {
-    id: 4,
-    name: "Education",
-    url: "#Education",
-  },
-
-  { id: 5, name: "Blogs", url: "#blog" },
-  { id: 6, name: "Contact", url: "#contact" },
+  { id: 6, name: "Connect", url: "#connect" },
 ];
 const Header = () => {
   const { scrollY } = useScroll();

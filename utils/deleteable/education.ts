@@ -1,3 +1,6 @@
+import { link } from "fs";
+import { list } from "postcss";
+
 export const educations = [
   {
     id: 1,
@@ -27,22 +30,44 @@ export const educations = [
 export const experiences = [
   {
     id: 1,
-    company: "AITC International",
-    address: "Radhe Radhe, Madhyapur Thimi 44800",
-    subtitle: "From 2022 ",
+    company: "AITC International Pvt. Ltd.",
+    link: "https://aitc.ai/",
+    address: "Bhaktapur, Nepal",
+    subtitle: "Oct 2022 to Sept 2025 ",
     position: "Frontend Developer",
-    description:
-      "Building reusable and modular code that is both scalable and maintainable is a priority, as it forms the foundation of any successful project. Implementing web designs using HTML, CSS, JavaScript, and modern frameworks like React and Next.js is essential, but so is optimizing the user interface for performance, accessibility, and cross-browser compatibility. Writing unit tests and functional tests further guarantees code quality and reliability, allowing for a seamless user experience. Staying up-to-date with emerging front-end technologies and industry trends is crucial, not just for personal growth but also for sharing knowledge with the team, fostering a culture of continuous learning and improvement.",
     image: "/exprience/aitc.png",
+    listItems: [
+      "Developed reusable and modular components, reducing code duplication by 20% and improving maintainability and scalability of the codebase, while leading code reviews to foster team learning and enforce high-quality coding standards.",
+
+      "Collaborated with designers, product managers, and stakeholders to deliver user-focused web interfaces, launching 75+ production features, resulting in a 15 to 20% increase in user engagement.",
+
+      "Optimized UI performance using HTML, CSS, JavaScript, React, and Next.js, achieving a 15% improvement in page load times and smoother interactions across devices and browsers.",
+
+      "Implemented accessibility best practices (WCAG 2.1) to ensure inclusive user experiences, improving accessibility compliance across all web pages by ~90%.",
+
+      "Enhanced usability by conducting usability testing and incorporating feedback, contributing to a 10 to 15% increase in user satisfaction metrics.",
+
+      "Monitored and adopted emerging frontend technologies and performance best practices, sharing insights with the team to continuously improve product quality.",
+    ],
   },
   {
     id: 2,
     company: "Ultimodeal Online Shopping",
-    address: "Thirbam Sadak 148, Kathmandu 44600",
-    subtitle: "From 2021 to 2022",
+    address: "Kathmandu, Nepal",
+    subtitle: "Aug 2021 to Aug 2022",
     position: "Frontend Developer",
-    description:
-      "In the dynamic world of front-end development, collaboration is key. Working closely with designers, product managers, and stakeholders ensures that innovative design solutions not only meet business requirements but also address user needs effectively. By participating in code reviews and continuously contributing to the improvement of development processes and best practices, I ensure that the team remains aligned with the latest industry standards, delivering high-quality and reliable products.",
+    link: "https://ultimodeal.com/",
     image: "/exprience/ultimodeal.png",
+    listItems: [
+      "Implemented responsive web pages using HTML, CSS, and JavaScript, achieving a 10–15% improvement in page load speed.",
+
+      "Debugged and optimized layouts across browsers, resulting in a 15–20% increase in cross-browser compatibility.",
+
+      "Collaborated with the team using Git for version control, streamlining workflow and reducing merge conflicts by ~25%.",
+
+      "Translated design concepts into fully functional web interfaces, strengthening frontend development skills and understanding of UI/UX principles.",
+
+      "Gained hands-on experience with component-based architecture and modern frontend workflows, laying a solid foundation for future projects.",
+    ],
   },
 ];
