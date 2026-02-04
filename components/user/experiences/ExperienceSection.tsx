@@ -12,7 +12,9 @@ const ExperienceSection = () => {
       />
       <div className="grid lg:grid-cols-2 gap-6">
         {experiences.map((item) => (
-          <ExperienceCard key={item.id} item={item} />
+          <div key={item.id}>
+            <ExperienceCard item={item} />
+          </div>
         ))}
       </div>
     </section>
