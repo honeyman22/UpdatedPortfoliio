@@ -11,7 +11,7 @@ const SkillSection = () => {
       className=" bg-primary py-10 sm:py-20 px-4 sm:px-10  w-full"
     >
       <ReusableHeader
-        title="My Skills"
+        title="Skills"
         message="Elevate your projects with my comprehensive skill set, blending technical expertise and creative insight to achieve outstanding, impactful solutions."
       />
       <div className="flex flex-col gap-6">

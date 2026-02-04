@@ -31,6 +31,9 @@ const config: Config = {
       boxShadow: {
         custom: "0 4px 6px rgba(0, 0, 0, 0.1)",
       },
+      screens: {
+        lg: "1040px",
+      },
       animation: {
         pop: "pop 3s ease-in-out infinite",
         scroll:

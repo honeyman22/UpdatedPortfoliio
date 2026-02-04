@@ -59,10 +59,10 @@ const ContactSection = () => {
           <h5 className="text-center  text-lg font-medium text-[#004080] sm:text-left ">
             Let&apos;s Connect
           </h5>
-          <h3 className="mt-2 text-center text-[48px] tracking-wide  text-highlight font-semibold sm:text-left">
+          <h3 className="mt-2 text-center text-[48px] leading-tight text-highlight font-semibold sm:text-left">
             Elevate Your Projects
           </h3>
-          <p className="mt-2 text-center text-[#222222] sm:w-[460px]  sm:text-left lg:w-full">
+          <p className="mt-2 text-center text-[#222222] sm:w-[460px]  sm:text-left md:w-full">
             No matter if you&apos;re starting from scratch or aiming to enhance
             your existing projects, I&apos;m excited to bring your ideas to
             life. Contact me to explore how we can work together to achieve your

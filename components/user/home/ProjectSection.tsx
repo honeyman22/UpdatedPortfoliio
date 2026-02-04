@@ -9,7 +9,7 @@ const ProjectSection = () => {
       className="project-section bg-secondary py-10 sm:py-20 px-4 sm:px-10  w-full"
     >
       <ReusableHeader
-        title="  My Expertise"
+        title="Expertise"
         message="Discover my range of professional services designed to help you
             achieve your business goals."
       />{" "}
