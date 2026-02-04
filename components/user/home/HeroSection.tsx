@@ -7,7 +7,7 @@ const HeroSection = () => {
   const lotteRef = useRef<Player | null>(null);
   return (
     <section className="relative hero-section items-center justify-center sm:py-20 px-4 sm:px-10 bg-secondary w-full flex flex-col sm:flex-row h-[90vh]">
-      <div className=" flex justify-center items-center w-full">
+      <div className=" flex flex-col gap-4  w-full">
         <h1 className="text-highlight font-semibold leading-[2.5rem] w-full text-2xl sm:text-5xl ">
           Hi, I&apos;m Nishan <br />A Passionate{" "}
           <span style={{ color: "#D0B8A0", fontWeight: "bold" }}>

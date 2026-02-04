@@ -6,7 +6,7 @@ import { educations } from "@/utils/deleteable/education";
 const EducationSection = () => {
   return (
     <section
-      id="education"
+      id="Education"
       className="education-section bg-secondary py-10 sm:py-20 px-4 sm:px-10  w-full"
     >
       <ReusableHeader
